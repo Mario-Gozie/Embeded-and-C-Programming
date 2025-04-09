@@ -203,8 +203,50 @@ int main(){
 
     printf("\n\n");
 
+    // IF STATEMENT ALONGSIDE WITH LOGICAL OPERATORS
+
+    int r =5, s = 7;
+
+    if (r == s){
+        printf("r is equal to s \n");
+    } else {
+        printf("r is not equal to s\n");
+    }
+
+    if(r != s){
+        printf("r is not equal to s\n");
+    }
+
+    if(r < s){
+        printf("r is less than s\n");
+    }
+
+    if(r > s){
+        printf("r is greater than s\n");
+    }
+
+    if(r >= s){
+        printf("r is greater or equal to s\n");
+    }
+
+    if(r <= s){
+        printf("r is less or equal to s\n");
+    }
+
+    int m = 20, n = 0;
+
+    if (m == 20 && n == 0){
+        printf("I got the m and n values correctly\n");
+    }
 
 
+    if(m ==50 || n >= 0){
+        printf("I approach a right guess for either n or m value\n");
+    }
 
+
+    // Trying out else if statement
+
+    
     return 0;
 }
