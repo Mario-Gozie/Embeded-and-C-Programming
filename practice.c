@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdint.h>
+#include<float.h>
 
 int main(){
     int whileInterator = 0;
@@ -44,5 +45,12 @@ int main(){
     printf("Float: %f\n", myFloat);
     printf("Double: %lf\n", myDouble);
     
+    // Working with <float.h>
+
+    printf("Float Max: %e\n", FLT_MAX);
+    printf("Float Min: %e\n", FLT_MIN);
+    printf("Double Max: %e\n", DBL_MAX);
+    printf("Double Min: %e\n", DBL_MIN);
+    printf("Double Digits: %d\n", DBL_DIG);
     return 0;
 }
