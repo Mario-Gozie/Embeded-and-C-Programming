@@ -100,6 +100,33 @@ int main(){
 
     printf("Addition value is %d while Subtraction value is %d and modulus value: %d\n", addition, subtraction, modulusValue);
     
+    // Conversions
+    // Implicit conversion
+
+    int intValue = 10;
+    float floatValue = intValue;
+
+    printf("first integer value: %d\n", intValue);
+    printf("first integer value converted to float: %f\n", floatValue);
+
+    // Explicit Conversion
+
+    float floatValue1 = 10.5;
+    int intValue1 = (int)floatValue1; // explicit conversion.
+
+    printf("Second float value: %f\n", floatValue1);
+    printf("Second float value converted to integer: %d\n", intValue1);
+
+    // Explicit conversion 
+
+    int intValue2 = 42;
+    double doubleValue = (double)intValue2;
+
+    printf("third integer value: %d\n", intValue2);
+    printf("third integer value converted to double: %lf\n", doubleValue);
+    printf("third integer value converted to double (Scientific form): %e\n", doubleValue); // scientific form
+    printf("third integer value converted to double (two decimal places): %.2f\n", doubleValue); // 2 decimal places
+
 
     return 0;
 }
