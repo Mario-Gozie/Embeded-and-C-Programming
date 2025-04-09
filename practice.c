@@ -298,5 +298,12 @@ int main(){
         case 7: printf("Sunday\n");
     }
 
+    // LOOPS
+    // for loop, while loop and do while loop.
+
+    for(int i = 0; i <= 5; i++){
+        printf("%d ", i);
+    }
+
     return 0;
 }
