@@ -87,8 +87,18 @@ int main(){
             printf("%c is not a digit\n", myString[i]);
         }
 
-
     }
+
+
+    // Arithemetic Operations
+
+    int addition = 5 + 3;
+
+    int subtraction = 8 - 3;
+
+    int modulusValue = 5 % 2;
+
+    printf("Addition value is %d while Subtraction value is %d and modulus value: %d\n", addition, subtraction, modulusValue);
     
 
     return 0;
