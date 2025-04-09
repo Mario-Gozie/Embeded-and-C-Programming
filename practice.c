@@ -194,8 +194,13 @@ int main(){
 
     int numberToRecieve;
 
-    printf("Please give me a Number: ");
+    printf("\n\n");
+    printf("Please give me a Number: \n");
     scanf("%d", &numberToRecieve);
+
+    printf("\n\nThe digit you entered is: %d", numberToRecieve);
+
+    printf("\n\n");
 
     return 0;
 }
