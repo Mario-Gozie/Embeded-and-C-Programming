@@ -1,6 +1,7 @@
 #include<stdio.h>
-#include<stdint.h>
-#include<float.h>
+#include<stdint.h> // for working with integers and specifying particular amount of bit.
+#include<float.h> // for working with floats
+#include<ctype.h> // for working with character and strings
 
 int main(){
     int whileInterator = 0;
@@ -52,5 +53,24 @@ int main(){
     printf("Double Max: %e\n", DBL_MAX);
     printf("Double Min: %e\n", DBL_MIN);
     printf("Double Digits: %d\n", DBL_DIG);
+
+
+    // Working with Characters and Strings
+
+    char myChar = 'A';
+    char myString[] = "Hello World!";
+
+    printf("This is my character: %c\n", myChar);
+    printf("This is my string: %s\n", myString);
+
+
+    // Multiline String 
+
+    char multiLineString[] = "This is the first line."
+                            " This is the second line." ;
+
+    printf("This is my multiLineString: %s\n", multiLineString);
+
+
     return 0;
 }
