@@ -190,7 +190,12 @@ int main(){
     printf("printing c: %d\n", c);
     printf("printing d: %d\n", d);
 
-    
+    // HOW TO USE scanf 
+
+    int numberToRecieve;
+
+    printf("Please give me a Number: ");
+    scanf("%d", &numberToRecieve);
 
     return 0;
 }
