@@ -4,6 +4,11 @@
 #include<ctype.h> // for working with character  eg isalpha(), isdigit, toupper()
 #include<string.h> // for working with strings
 
+// Declaring a funciton here.
+int add(int a, int b){
+    return a + b;
+}
+
 int main(){
     int whileInterator = 0;
     int decNumber = 1;
@@ -126,6 +131,10 @@ int main(){
     printf("third integer value converted to double: %lf\n", doubleValue);
     printf("third integer value converted to double (Scientific form): %e\n", doubleValue); // scientific form
     printf("third integer value converted to double (two decimal places): %.2f\n", doubleValue); // 2 decimal places
+
+    // FUNCTIONS
+    int sum = add(3, 4); // This function is declared outside before the main function
+    printf("The sum of two numbers above are: %d\n", sum);
 
 
     return 0;
