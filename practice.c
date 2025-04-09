@@ -7,7 +7,19 @@
 // Declaring a funciton here.
 int add(int a, int b){
     return a + b;
-}
+};
+
+
+
+int swap(int *c, int *d) // an Address will be passed into this function.
+    {
+        int temp = 0;
+        temp = *c;
+        *c = *d;
+        *d = temp;
+
+        return 0;
+    };
 
 int main(){
     int whileInterator = 0;
@@ -136,6 +148,49 @@ int main(){
     int sum = add(3, 4); // This function is declared outside before the main function
     printf("The sum of two numbers above are: %d\n", sum);
 
+
+
+    // Pointer Variables
+    // These are Variables used to store the memory address of another variable
+
+    printf("NOW I WILL BE LOOKING INTO POINTERS\n\n\n\n");
+
+    int x, y;
+    
+
+    printf("printing x and y: %d %d \n", x , y);
+
+    
+    int *px, *py;
+
+    x = 1;
+    px = &x;
+
+    printf("printing px: %d \n", px);
+
+    y = *px;
+
+    printf("Printing y: %d \n", y);
+
+    *px = 0;
+
+    printf("Printing *px: %d \n", *px);
+
+    py = px;
+
+    printf("Printing py: %d \n", py);
+
+    // Creating a Swapping Function and running.
+
+    int c = 20;
+    int d = 10;
+
+    swap(&c, &d);
+
+    printf("printing c: %d\n", c);
+    printf("printing d: %d\n", d);
+
+    
 
     return 0;
 }
