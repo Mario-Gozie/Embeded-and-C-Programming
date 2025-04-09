@@ -301,9 +301,31 @@ int main(){
     // LOOPS
     // for loop, while loop and do while loop.
 
+    printf("\n\nFor loop\n\n");
+
     for(int i = 0; i <= 5; i++){
         printf("%d ", i);
     }
+
+    printf("\n\nWhile Loop\n\n");
+    // while loop
+
+    int counter = 1;
+
+    while(counter <= 5){
+        printf("%d ", counter);
+        counter++;
+    }
+
+    printf("\n\nDo While loop\n\n");
+    // Do while loop
+
+    int count = 1;
+
+    do{
+        printf("%d ", count);
+        count++;
+    } while(count <= 5);
 
     return 0;
 }
