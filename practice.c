@@ -327,5 +327,48 @@ int main(){
         count++;
     } while(count <= 5);
 
+
+
+
+    // Printing Even Numbers
+
+    printf("\n\nPrinting Even Numbers\n\n");
+
+    for(int x = 2; x <= 10; x += 2){
+        printf("%d ", x);
+    }
+
+    printf("\n\n");
+
+// Using a break in a loop
+
+    printf("\n\nBreaking a loop\n\n");
+
+    for(int j = 1; j <= 5; j++){
+        if(j == 5){
+            printf("Breaking the loop at i ==5\n");
+            break;
+        }
+
+        printf("%d ", j);
+    }
+
+    // testing continue statement
+
+    printf("\n\nPracticing continue statement\n\n");
+
+    int k = 0;
+
+    while(k < 5){
+        k++;
+        if(k == 3){
+            printf("skipping k = 3\n");
+            continue;
+        }
+
+        printf("%d ", k);
+        
+    }
+
     return 0;
 }
