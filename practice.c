@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdint.h> // for working with integers and specifying particular amount of bit.
 #include<float.h> // for working with floats
-#include<ctype.h> // for working with character and strings
+#include<ctype.h> // for working with character  eg isalpha(), isdigit, toupper()
+#include<string.h> // for working with strings
 
 int main(){
     int whileInterator = 0;
@@ -71,6 +72,24 @@ int main(){
 
     printf("This is my multiLineString: %s\n", multiLineString);
 
+
+    // using the ctype header
+
+    if(isalpha(myChar)){
+        printf("%c it is an Alphabet\n", myChar);
+    }
+
+    for(int i = 0; i < strlen(myString); i++){
+
+        if(isdigit(myString[i])){
+            printf("%d is a digit\n", myString[i]);
+        } else{
+            printf("%c is not a digit\n", myString[i]);
+        }
+
+
+    }
+    
 
     return 0;
 }
