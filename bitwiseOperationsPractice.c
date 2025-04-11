@@ -32,18 +32,25 @@ int main(int argc, char* arg[]){
   }
 
 
-  printf("\nWhen You want to set a specific bit use the or Operator. remember '0b' makes a number binary\n");
+  printf("\nWhen You want to set a specific bit use the or Operator. remember '0b' makes a number binary\n\n");
 
   unsigned int m = 0b1 | 0b10 |0b10000000; 
+  // 0000 0000 0000 0000 0000 0000 0000 0001
+  // 0000 0000 0000 0000 0000 0000 0000 0010 |
+  // 0000 0000 0000 0000 0000 0000 1000 0000 |
+
   // The result will be 0000 0000 0000 0000 0000 0000 1000 0011
+
+  if((m & 0b1) != 0){
+    printf("First digit is enabled\n");
+  }
+
 
   if((m & 0b10) != 0){
     printf("Second digit is enabled\n");
   }
 
-  if((m & 0b1) != 0){
-    printf("First digit is enabled\n");
-  }
+
 
   if((m & 0b10000000) != 0){
     printf("8th digit is enabled\n");
