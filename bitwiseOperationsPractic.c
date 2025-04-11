@@ -24,7 +24,11 @@ int main(int argc, char* arg[]){
     // result is 0000 0000 0000 0000 0000 0000 0000 0000
     printf("1st features is enabled\n");
   } else{
-    printf("value is equal to zero");
+    printf("value is equal to zero\n");
+  }
+
+  if((flags & 2) != 0){
+    printf("Second digit is enabled\n");
   }
 
     
