@@ -67,6 +67,13 @@ int main(){
     printf("Result of g: %x\n", g); // printing result in hexadecimal to clearly show why I have negative 6 (-6)
 
     
+    // if I make g unsigned, I will get a huge number instead of a Negative number. Please not that if the first number of a signed integer is 1 then we will get a negative value.
+    
+    printf("\nConverting g to unsigned int\n");
+
+    unsigned int unsigned_g = (unsigned int) g;
+
+    printf("Result of unsigned g: %u\n", unsigned_g);
 
     
 
