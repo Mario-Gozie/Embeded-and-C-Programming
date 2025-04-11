@@ -37,15 +37,15 @@ int main(int argc, char* arg[]){
   unsigned int m = 0b1 | 0b10 |0b10000000; 
   // The result will be 0000 0000 0000 0000 0000 0000 1000 0011
 
-  if((flags & 0b10) != 0){
+  if((m & 0b10) != 0){
     printf("Second digit is enabled\n");
   }
 
-  if((flags & 0b1) != 0){
+  if((m & 0b1) != 0){
     printf("First digit is enabled\n");
   }
 
-  if((flags & 0b10000000) != 0){
+  if((m & 0b10000000) != 0){
     printf("8th digit is enabled\n");
   }
 
