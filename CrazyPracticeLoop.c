@@ -14,19 +14,25 @@ int main(){
     printf("The string is: %s\n", times); // Print the resulting string
 
     int counter = 0;
-    int valueDeterminant = 0;
+    int valueDeterminant = -1;
     int x;
 
     while(counter < strlen(times)){
-      for(x=0; x <= strlen(times); x++){
+      for(x=0; x < strlen(times); x++){
         
         if(x > valueDeterminant){
           printf("%c ", times[x]);
+         
         }else{
             printf("- ");
+            
         }
+
+        
         
       }  
+      printf("\n");
+      valueDeterminant++;
       counter++;
     }
 
