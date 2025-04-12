@@ -68,7 +68,8 @@ int main(int argc, char* arg[]){
   
   
 
-  printf("k left shifted by 1: %d\n", k << 1); // bit shifting k by 1 will give you 2
+  printf("k left shifted by 1: %d\n", k << 1); // BITSHIFT CAN ALSO BE DONE THIS WAY k <<= 1;
+  // bit shifting k by 1 will give you 2
 
   // bit shifting ONCE will give 0000 0000 0000 0000 0000 0000 0000 0010 which is 2
 
@@ -77,5 +78,24 @@ int main(int argc, char* arg[]){
 
   // bit shifting TWICE will give 0000 0000 0000 0000 0000 0000 0000 0100 which is 2
 
-    return 0;
+  printf("\n\nDoing a leftshft on 32 bits\n\n");
+
+  int i;
+
+  for(i = 0; i < 32; i++){
+    printf("left shifted by %02d: %08x | %u\n",i, k << i, k << i); 
+  }
+
+  // RIGHT SHIFTING
+
+  printf("\n\nRIGHT SHIFT\n\n");
+  unsigned int l = 100000000;
+  int p;
+
+  for(p = 0; p < 32; p++){
+    printf("Right shifted by %02d: %08x | %u\n",p, l >> p, l >> p); // Right shift can also be done with l>>=1
+  }
+
+  
+  return 0;
 }
