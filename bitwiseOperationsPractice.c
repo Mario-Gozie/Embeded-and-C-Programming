@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 // TO UNDERSTAND ALL THESE, YOU NEED TO KNOW BINARY CONVERSION FIRST.
 // IF YOU DO, LETS NOW USE & (AND), | (OR), ~ (NOT operator, which alway flips or do entirely oposit of the value), << (Left shift) , >> (Right shift), ^ (exclusive OR)
@@ -95,6 +97,9 @@ int main(int argc, char* arg[]){
   for(p = 0; p < 32; p++){
     printf("Right shifted by %02d: %08x | %u\n",p, l >> p, l >> p); // Right shift can also be done with l>>=1
   }
+
+
+ 
 
   
   return 0;
