@@ -34,10 +34,23 @@ int main(){
   // result 10000001
 
   // TO ACHIEVE THE RESULT WE WILL DO "flags & ~SECOND_FLAGS"
+printf("\n\nDISABLING THE SECOND\n\n");
 
   flags = flags & ~SECOND_FLAG;
   if((flags) == FIRST_FLAG | THIRD_FLAG){
     printf("second flag disabled");
+  }
+
+  printf("\n\nENABLING THE SECOND FLAG\n\n");
+
+
+  // Enabling the second flag
+  // flags = flags | SECOND_FLAG
+
+  flags |= SECOND_FLAG;
+
+  if(flags == FIRST_FLAG | SECOND_FLAG | THIRD_FLAG){
+    printf("second flag enabled, making all flags active");
   }
 
     return 0;

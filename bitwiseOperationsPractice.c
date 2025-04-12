@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+// TO UNDERSTAND ALL THESE, YOU NEED TO KNOW BINARY CONVERSION FIRST.
+// IF YOU DO, LETS NOW USE & (AND), | (OR), ~ (NOT operator, which alway flips or do entirely oposit of the value), << (Left shift) , >> (Right shift), ^ (exclusive OR)
+
+
 int main(int argc, char* arg[]){
     
     // int x, y; // 8 bytes (one int is 4 bytes and here we have two integers)
@@ -55,6 +59,23 @@ int main(int argc, char* arg[]){
   if((m & 0b10000000) != 0){
     printf("8th digit is enabled\n");
   }
+
+  printf("\n\nBIT SHIFT OPERATIONS\n\n");
+
+  unsigned int k = 1; // Remember that the computer will see this 5 to be represented in binary.
+
+  // 1 = 0000 0000 0000 0000 0000 0000 0000 0001
+  
+  
+
+  printf("k left shifted by 1: %d\n", k << 1); // bit shifting k by 1 will give you 2
+
+  // bit shifting ONCE will give 0000 0000 0000 0000 0000 0000 0000 0010 which is 2
+
+
+  printf("k left shifted by 2: %d\n", k << 2); // left shifting by 2 will lead to 4
+
+  // bit shifting TWICE will give 0000 0000 0000 0000 0000 0000 0000 0100 which is 2
 
     return 0;
 }
